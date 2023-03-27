@@ -16,7 +16,7 @@ class SentenceModifierParametrizedTest {
 
     @ParameterizedTest(name = "Origin sentence: {0}")
     @CsvFileSource(resources = "/sentenceModifierInputFile.csv", numLinesToSkip = 1)
-    @Description("Test Description : DDT Reverse sentence by iteration loop")
+    @Description("Test Description : Parametrized input for reverse sentence by iteration loop")
     @Story("STORY_2")
     void checkMethod1Test(String originSentence, String expectedSentence) {
         String modifiedSentence = SentenceModifier.reverseSentenceUsingForLoop(originSentence);
@@ -29,7 +29,7 @@ class SentenceModifierParametrizedTest {
 
     @ParameterizedTest(name = "Origin sentence: {0}")
     @CsvFileSource(resources = "/sentenceModifierInputFile.csv", numLinesToSkip = 1)
-    @Description("Test Description : DDT Reverse sentence by stream")
+    @Description("Test Description : Parametrized input for reverse sentence by stream")
     @Story("STORY_1")
     void checkMethod2Test(String originSentence, String expectedSentence) {
         String modifiedSentence = SentenceModifier.reverseSentenceUsingStream(originSentence);
